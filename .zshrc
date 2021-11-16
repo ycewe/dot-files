@@ -8,7 +8,8 @@ export PATH=/bin:/usr/bin:/usr/local/bin:${PATH}
 
 # Config for nvm, which lets us switch Node versions easily (https://github.com/creationix/nvm)
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"
 
 # ----------
 # ALIAS
