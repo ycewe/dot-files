@@ -1,0 +1,7 @@
+- name: Install zsh-autosuggestions
+  ansible.builtin.git:
+    repo: https://github.com/zsh-users/zsh-autosuggestions
+    dest: ~/.zsh/zsh-autosuggestions
+  tags:
+  - zsh
+  - dotfiles
