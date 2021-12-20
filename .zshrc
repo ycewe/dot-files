@@ -1,21 +1,18 @@
-
 # -----------
 # EXPORTS
 # -----------
 
 export PATH=/bin:/usr/bin:/usr/local/bin:${PATH}
 
-
 # Config for nvm, which lets us switch Node versions easily (https://github.com/creationix/nvm)
 export NVM_DIR="$HOME/.nvm"
   [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
   [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"
 
+
 # ----------
 # ALIAS
 # ----------
-
-alias rm=trash
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
@@ -45,5 +42,20 @@ alias gc="git commit"
 alias reload_z="source ~/.zshrc"
 alias edit_z="code ~/.zshrc"
 
+
+# -----------------------------
+# MISC
+# -----------------------------
 # activate starship
 eval "$(starship init zsh)"
+
+# asdf
+. /usr/local/opt/asdf/libexec/asdf.sh
+
+
+# ----------
+# zsh autosuggestions
+# ----------
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=cyan"
