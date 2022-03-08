@@ -4,24 +4,25 @@ truncate_to_repo = false
 
 [directory.substitutions]
 "~/Documents/github" = "github.com"
-"~/Documents/stash" = "stash.backbase.com/projects/RC/repos"
+"~/Documents/stash/DOC" = "stash.backbase.com/projects/DOC/repos"
+"~/Documents/stash/RC" = "stash.backbase.com/projects/RC/repos"
 
 [git_branch]
 symbol = " "
 
 [git_status]
 format = '([\[$all_status$ahead_behind\]]($style) )'
-conflicted = "🏳"
-ahead = "🏎💨"
+conflicted = "🏳 "
+ahead = "🏎 💨"
 behind = "😰"
 diverged = "😵"
 up_to_date = "✓"
-untracked = "🤷‍"
+untracked = "🤷<200d>"
 stashed = "📦"
 modified = "📝"
 staged = '[++\($count\)](green)'
 renamed = "👅"
-deleted = "🗑"
+deleted = "🗑 "
 disabled = true
 
 [nodejs]
@@ -29,4 +30,5 @@ format = '\[[$symbol($version)]($style)\]'
 
 [package]
 format = "[$symbol$version]($style) "
-symbol = " "
+symbol = "📦 "
+
